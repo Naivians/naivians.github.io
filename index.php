@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M&M - Web Developer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body class="antialiased">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/80 backdrop-blur-md shadow-sm z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex items-center">
+            <a
+              href="#home"
+              class="text-xl font-bold text-indigo-600 flex items-center animate-slideInLeft"
+            >
+              <span class="bg-indigo-600 text-white p-1 rounded mr-2">
+                <i class="fas fa-code"></i>
+              </span>
+              M&M
+            </a>
+          </div>
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              href="#home"
+              class="text-gray-600 hover:text-indigo-600 transition-colors animate-slideUp animate-delay-100"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="text-gray-600 hover:text-indigo-600 transition-colors animate-slideUp animate-delay-200"
+              >About</a
+            >
+            <a
+              href="#work"
+              class="text-gray-600 hover:text-indigo-600 transition-colors animate-slideUp animate-delay-200"
+              >Work Experience</a
+            >
+            <a
+              href="#skills"
+              class="text-gray-600 hover:text-indigo-600 transition-colors animate-slideUp animate-delay-300"
+              >Skills</a
+            >
+            <a
+              href="#projects"
+              class="text-gray-600 hover:text-indigo-600 transition-colors animate-slideUp animate-delay-400"
+              >Projects</a
+            >
+            <a
+              href="#contact"
+              class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition-colors animate-slideUp animate-delay-500"
+            >
+              Contact
+            </a>
+          </div>
+          <div class="md:hidden flex items-center">
+            <button
+              id="menu-toggle"
+              class="text-gray-600 hover:text-indigo-600"
+            >
+              <i class="fas fa-bars text-2xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile menu -->
+      <div
+        id="mobile-menu"
+        class="hidden flex-col bg-white p-4 space-y-2 shadow-lg md:hidden"
+      >
+        <a
+          href="#home"
+          class="text-gray-600 hover:text-indigo-600 transition-colors"
+          >Home</a
+        >
+        <a
+          href="#about"
+          class="text-gray-600 hover:text-indigo-600 transition-colors"
+          >About</a
+        >
+        <a
+          href="#work"
+          class="text-gray-600 hover:text-indigo-600 transition-colors"
+          >Work Experience</a
+        >
+        <a
+          href="#skills"
+          class="text-gray-600 hover:text-indigo-600 transition-colors"
+          >Skills</a
+        >
+        <a
+          href="#projects"
+          class="text-gray-600 hover:text-indigo-600 transition-colors"
+          >Projects</a
+        >
+        <a
+          href="#contact"
+          class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition-colors text-center"
+          >Contact</a
+        >
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-pattern pt-32 pb-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6">
+            <h1
+              class="text-5xl font-bold text-gray-800 leading-tight animate-fadeIn"
+            >
+              Hi, I'm <span class="text-indigo-600">Marvin Madera</span>
+            </h1>
+            <h2 class="text-2xl text-gray-600 animate-fadeIn animate-delay-100">
+              Creative Junior Full Stack Developer
+            </h2>
+            <p class="text-gray-500 animate-fadeIn animate-delay-200">
+              I build modern, responsive web applications with beautiful
+              interfaces and seamless user experiences.
+            </p>
+            <div class="flex space-x-4 pt-4 animate-fadeIn animate-delay-300">
+              <a
+                href="#projects"
+                class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition-colors"
+              >
+                View Projects
+              </a>
+              <a
+                href="A.pdf"
+                download="My_Resume.pdf"
+                class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors"
+              >
+                Hire Me!
+              </a>
+            </div>
+            <div class="pt-8 flex space-x-6 animate-fadeIn animate-delay-400">
+              <a
+                href="https://github.com/Naivians"
+                class="text-gray-600 hover:text-indigo-600 transition-colors"
+                target="_blank"
+              >
+                <i class="fab fa-github text-xl"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/maderamarvinc"
+                class="text-gray-600 hover:text-indigo-600 transition-colors"
+                target="_blank"
+              >
+                <i class="fab fa-facebook text-xl"></i>
+              </a>
+            </div>
+          </div>
+          <div class="relative hidden md:block animate-float">
+            <div
+              class="absolute -top-6 -left-6 w-32 h-32 bg-indigo-100 rounded-full animate-pulse"
+            ></div>
+            <div
+              class="absolute -bottom-6 -right-6 w-32 h-32 bg-purple-100 rounded-full animate-pulse"
+            ></div>
+            <img
+              src="/assets/img/1.png"
+              alt="Portrait of Marvin Madera"
+              class="relative z-10 rounded-lg shadow-xl w-full"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="about"
+      class="py-20 bg-white"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2
+            class="text-3xl font-bold text-gray-800 mb-4"
+            data-animate="fadeIn"
+          >
+            GET TO KNOW ME
+          </h2>
+          <div
+            class="w-20 h-1 bg-indigo-600 mx-auto"
+            data-animate="slideInLeft"
+          ></div>
+        </div>
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6" data-aos="fade-up" data-aos-duration="2000">
+            <p class="text-gray-600">
+              I'm a passionate Junior Full Stack Developer with 2+ years of
+              experience building web applications for startups and enterprises.
+              I specialize in PHP ecosystems including Native PHP, Laravel and
+              modern CSS frameworks.
+            </p>
+            <p class="text-gray-600">
+              My approach combines technical excellence with thoughtful design,
+              creating applications that are both powerful and delightful to
+              use.
+            </p>
+            <div class="grid grid-cols-2 gap-4 pt-4">
+              <div class="flex items-center">
+                <span
+                  class="bg-indigo-100 text-indigo-600 p-2 rounded-full mr-3"
+                >
+                  <i class="fas fa-check"></i>
+                </span>
+                <span class="text-gray-600">Problem Solver</span>
+              </div>
+              <div class="flex items-center">
+                <span
+                  class="bg-indigo-100 text-indigo-600 p-2 rounded-full mr-3"
+                >
+                  <i class="fas fa-check"></i>
+                </span>
+                <span class="text-gray-600">Clean Code</span>
+              </div>
+              <div class="flex items-center">
+                <span
+                  class="bg-indigo-100 text-indigo-600 p-2 rounded-full mr-3"
+                >
+                  <i class="fas fa-check"></i>
+                </span>
+                <span class="text-gray-600">UI/UX Focus</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="grid grid-cols-2 gap-4"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <div class="p-6 bg-indigo-50 rounded-lg text-center">
+              <h3 class="text-4xl font-bold text-indigo-600 mb-2">2+</h3>
+              <p class="text-gray-600">Years Experience</p>
+            </div>
+            <div class="p-6 bg-indigo-50 rounded-lg text-center">
+              <h3 class="text-4xl font-bold text-indigo-600 mb-2">20+</h3>
+              <p class="text-gray-600">Projects Done</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="work" class="bg-gray-900 text-white py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">WORKING EXPERIENCE</h2>
+        <div class="relative border-l border-gray-700">
+          <!-- Item 1 -->
+          <div class="mb-10 ml-6" data-aos="fade-left" data-aos-duration="1500">
+            <div
+              class="absolute w-3 h-3 bg-indigo-500 rounded-full -left-1.5 border border-gray-900"
+            ></div>
+            <time class="mb-1 text-sm font-normal text-gray-400">Present</time>
+            <h3 class="text-xl font-semibold">
+              ICT Staff · Leading Edge International Aviation Academy Inc.
+              (LEIAAI)
+            </h3>
+            <p class="text-gray-300">
+              Providing technical support, maintaining IT infrastructure, and
+              developing software solutions to improve operational efficiency
+              across the organization.
+            </p>
+            <ul class="list-disc list-inside text-gray-400 mt-2 space-y-1">
+              <li>Troubleshoot and resolve network connectivity issues</li>
+              <li>
+                Optimized performance and accessibility of Synology File Server
+              </li>
+              <li>
+                Maintain and support company-wide computers, peripherals, and
+                printers
+              </li>
+              <li>
+                Designed and developed multiple internal systems, including:
+                <ul
+                  class="list-disc list-inside text-gray-400 mt-2 space-y-1 ml-6"
+                >
+                  <li>Corporate Website</li>
+                  <li>IT Ticketing & Simulator Error Logging System</li>
+                  <li>
+                    Planning to build ERP System for business process automation
+                  </li>
+                  <li>etc..</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Item 2 -->
+          <div
+            class="mb-10 ml-6"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
+            <div
+              class="absolute w-3 h-3 bg-indigo-500 rounded-full -left-1.5 border border-gray-900"
+            ></div>
+            <time class="mb-1 text-sm font-normal text-gray-400"
+              >October 2024 - January 2025</time
+            >
+            <h3 class="text-xl font-semibold">
+              Junior Web Developer · OrangeApps
+            </h3>
+            <p class="text-gray-300">
+              Gained first-hand professional experience in software development
+              by contributing to internal business applications. Collaborated
+              with senior developers, worked under tight deadlines, and
+              developed an understanding of real-world coding standards and
+              practices. This role served as a foundation for strengthening my
+              technical skills and motivated me to further upskill in modern
+              development frameworks and best practices.
+            </p>
+            <ul class="list-disc list-inside text-gray-400 mt-2 space-y-1">
+              <li>
+                Assisted in developing and maintaining internal web applications
+              </li>
+              <li>
+                Applied problem-solving skills in debugging and optimizing code
+              </li>
+              <li>
+                Collaborated across departments to meet project requirements
+              </li>
+              <li>
+                Adapted quickly to new tools, workflows, and industry standards
+              </li>
+            </ul>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="mb-10 ml-6" data-aos="fade-left" data-aos-duration="1500">
+            <div
+              class="absolute w-3 h-3 bg-indigo-500 rounded-full -left-1.5 border border-gray-900"
+            ></div>
+            <time class="mb-1 text-sm font-normal text-gray-400"
+              >October 2024 – December 2024</time
+            >
+            <h3 class="text-xl font-semibold">
+              IT Professor · University of Rizal System (URS-Cainta)
+            </h3>
+            <p class="text-gray-300">
+              Taught undergraduate students in Information Technology, focusing
+              on web development and programming fundamentals. Designed lesson
+              plans, delivered lectures, and guided students in building
+              real-world projects to strengthen their technical and
+              problem-solving skills.
+            </p>
+            <ul class="list-disc list-inside text-gray-400 mt-2 space-y-1">
+              <li>
+                Developed and delivered course materials for PHP programming and
+                web technologies
+              </li>
+              <li>
+                Introduced students to database concepts and server-side
+                development
+              </li>
+              <li>
+                Guided students in hands-on projects, including simple web
+                applications
+              </li>
+              <li>
+                Mentored students to improve coding practices and logical
+                thinking
+              </li>
+            </ul>
+          </div>
+
+          <!-- Item 4 -->
+          <div
+            class="mb-10 ml-6"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
+            <div
+              class="absolute w-3 h-3 bg-indigo-500 rounded-full -left-1.5 border border-gray-900"
+            ></div>
+            <time class="mb-1 text-sm font-normal text-gray-400"
+              >February 2024 - September 2024</time
+            >
+            <h3 class="text-xl font-semibold">
+              ICT Staff · Vision International Construction OPC - Vision
+            </h3>
+            <p class="text-gray-300">
+              Providing technical support, maintaining IT infrastructure, and
+              developing software solutions to improve operational efficiency
+              across the organization.
+            </p>
+            <ul class="list-disc list-inside text-gray-400 mt-2 space-y-1">
+              <li>Troubleshoot and resolve network connectivity issues</li>
+              <li>
+                Maintain and support company-wide computers, peripherals, and
+                printers
+              </li>
+              <li>
+                Designed and developed multiple internal systems, including:
+                <ul
+                  class="list-disc list-inside text-gray-400 mt-2 space-y-1 ml-6"
+                >
+                  <li>Corporate Website Integrated with laravel-powered API</li>
+                  <li>Inventory System</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="mb-10 ml-6" data-aos="fade-left" data-aos-duration="1500">
+            <div
+              class="absolute w-3 h-3 bg-indigo-500 rounded-full -left-1.5 border border-gray-900"
+            ></div>
+            <time class="mb-1 text-sm font-normal text-gray-400">Others</time>
+            <h3 class="text-xl font-semibold">Freelance Web Developer</h3>
+            <p class="text-gray-300">
+              Developed custom websites for students and small projects during
+              college since 2023, gaining practical experience in front-end and
+              back-end web development while delivering functional and
+              user-friendly solutions.
+            </p>
+            <ul class="list-disc list-inside text-gray-400 mt-2 space-y-1">
+              <li>
+                Designed responsive websites using HTML, CSS, JavaScript, and
+                Bootstrap
+              </li>
+              <li>Integrated back-end functionality with Native PHP</li>
+              <li>
+                Built academic project websites tailored to student requirements
+              </li>
+              <li>
+                Delivered projects on time while balancing coursework and client
+                needs
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="py-20 bg-gray-50">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">MY SKILLS</h2>
+          <div class="w-20 h-1 bg-indigo-600 mx-auto"></div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Frontend Skills -->
+          <div
+            class="p-8 bg-white rounded-xl shadow-sm"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <div class="text-center mb-6">
+              <div
+                class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <i class="fas fa-code text-2xl text-indigo-600"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800 mb-2">Frontend</h3>
+            </div>
+            <div class="space-y-4">
+              <div
+                class="skill-item p-3 bg-gray-50 rounded-lg flex items-center"
+              >
+                <!-- <img
+                  src="https://placehold.co/30x30"
+                  alt="HTML5 logo"
+                  class="w-8 h-8 rounded mr-3"
+                /> -->
+                <div
+                  class="w-8 h-8 rounded mr-3 flex items-center justify-center"
+                >
+                  <i class="fa-brands fa-html5 text-xl"></i>
+                </div>
+
+                <span>HTML5</span>
+                <span
+                  class="ml-auto bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-xs"
+                  >95%</span
+                >
+              </div>
+              <div
+                class="skill-item p-3 bg-gray-50 rounded-lg flex items-center"
+              >
+                <div
+                  class="w-8 h-8 rounded mr-3 flex items-center justify-center"
+                >
+                  <i class="fa-brands fa-css3-alt text-xl"></i>
+                </div>
+                <span>CSS3</span>
+                <span
+                  class="ml-auto bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-xs"
+                  >90%</span
+                >
+              </div>
+              <div
+                class="skill-item p-3 bg-gray-50 rounded-lg flex items-center"
+              >
+                <div
+                  class="w-8 h-8 rounded mr-3 flex items-center justify-center"
+                >
+                  <i class="fa-brands fa-js text-lg"></i>
+                </div>
+                <span>JavaScript</span>
+                <span
+                  class="ml-auto bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-xs"
+                  >80%</span
+                >
+              </div>
+              <div
+                class="skill-item p-3 bg-gray-50 rounded-lg flex items-center"
+              >
+                <div
+                  class="w-8 h-8 rounded mr-3 flex items-center justify-center"
+                >
+                  <i class="fa-brands fa-bootstrap"></i>
+                </div>
+
+                <span>Bootstrap</span>
+                <span
+                  class="ml-auto bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-xs"
+                  >95%</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend Skills -->
+          <div class="p-8 bg-white rounded-xl shadow-sm" data-animate="slideUp">
+            <div class="text-center mb-6">
+              <div
+                class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <i class="fas fa-server text-2xl text-indigo-600"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800 mb-2">Backend</h3>
+            </div>
+            <div class="space-y-4">
+              <div
+                class="skill-item p-3 bg-gray-50 rounded-lg flex items-center"
+              >
+                <div
+                  class="w-8 h-8 rounded mr-3 flex items-center justify-center"
+                >
+                  <i class="fa-brands fa-php"></i>
+                </div>
+                <span>Native PHP</span>
+                <span
+                  class="ml-auto bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-xs"
+                  >85%</span
+                >
+              </div>
+              <div
+                class="skill-item p-3 bg-gray-50 rounded-lg flex items-center"
+              >
+                <div
+                  class="w-8 h-8 rounded mr-3 flex items-center justify-center"
+                >
+                  <i class="fa-brands fa-laravel text-lg"></i>
+                </div>
+                <span>Laravel</span>
+                <span
+                  class="ml-auto bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-xs"
+                  >95%</span
+                >
+              </div>
+              <div
+                class="skill-item p-3 bg-gray-50 rounded-lg flex items-center"
+              >
+                <div
+                  class="w-8 h-8 rounded mr-3 flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-database text-lg"></i>
+                </div>
+                <span>MySql</span>
+                <span
+                  class="ml-auto bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-xs"
+                  >90%</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Other Skills -->
+          <div
+            class="p-8 bg-white rounded-xl shadow-sm"
+            data-animate="slideInLeft"
+          >
+            <div class="text-center mb-6">
+              <div
+                class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <i class="fas fa-tools text-2xl text-indigo-600"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800 mb-2">Other Skills</h3>
+            </div>
+            <div class="space-y-4">
+              <div
+                class="skill-item p-3 bg-gray-50 rounded-lg flex items-center"
+              >
+                <div
+                  class="w-8 h-8 rounded mr-3 flex items-center justify-center"
+                >
+                  <i class="fa-brands fa-git-alt text-lg"></i>
+                </div>
+
+                <span>Git</span>
+                <span
+                  class="ml-auto bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-xs"
+                  >88%</span
+                >
+              </div>
+              <div
+                class="skill-item p-3 bg-gray-50 rounded-lg flex items-center"
+              >
+                <div
+                  class="w-8 h-8 rounded mr-3 flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-headset text-lg"></i>
+                </div>
+
+                <span>Technical Support</span>
+                <span
+                  class="ml-auto bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-xs"
+                  >80%</span
+                >
+              </div>
+              <div
+                class="skill-item p-3 bg-gray-50 rounded-lg flex items-center"
+              >
+                <div
+                  class="w-8 h-8 rounded mr-3 flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-camera"></i>
+                </div>
+
+                <span>Video Editing</span>
+                <span
+                  class="ml-auto bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-xs"
+                  >50%</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="text-center mb-16"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">
+            TAKE A LOOK AT MY PROJECTS
+          </h2>
+          <div
+            class="w-20 h-1 bg-indigo-600 mx-auto"
+            data-animate="slideInLeft"
+          ></div>
+          <p class="text-gray-600 mt-4 max-w-2xl mx-auto" data-animate="fadeIn">
+            Here's a selection of my recent work. Each project was built with
+            attention to detail and a focus on solving real-world problems.
+          </p>
+        </div>
+
+        <!-- projects modals -->
+        <div
+          id="myModal"
+          class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden"
+        >
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg w-full max-w-5xl h-[80vh] overflow-y-auto"
+          >
+            <!-- <div class="w-full mb-4">
+              <video controls class="w-full max-w-full h-auto rounded">
+                <source
+                  src="https://www.w3schools.com/html/mov_bbb.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div> -->
+
+            <div
+              class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mb-6"
+              id="gallery"
+            >
+              <img
+                src="https://placehold.co/300x200?text=Image+1"
+                alt="Image 1"
+                class="w-full rounded shadow-md cursor-pointer"
+                onclick="openLightbox(this.src)"
+              />
+              <img
+                src="https://placehold.co/300x200?text=Image+2"
+                alt="Image 2"
+                class="w-full rounded shadow-md cursor-pointer"
+                onclick="openLightbox(this.src)"
+              />
+              <img
+                src="https://placehold.co/300x200?text=Image+3"
+                alt="Image 3"
+                class="w-full rounded shadow-md cursor-pointer"
+                onclick="openLightbox(this.src)"
+              />
+              <img
+                src="https://placehold.co/300x200?text=Image+4"
+                alt="Image 4"
+                class="w-full rounded shadow-md cursor-pointer"
+                onclick="openLightbox(this.src)"
+              />
+              <img
+                src="https://placehold.co/300x200?text=Image+4"
+                alt="Image 4"
+                class="w-full rounded shadow-md cursor-pointer"
+                onclick="openLightbox(this.src)"
+              />
+              <img
+                src="https://placehold.co/300x200?text=Image+4"
+                alt="Image 4"
+                class="w-full rounded shadow-md cursor-pointer"
+                onclick="openLightbox(this.src)"
+              />
+            </div>
+
+            <!-- Lightbox Modal -->
+            <div
+              id="lightbox"
+              class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden"
+              onclick="closeLightbox()"
+            >
+              <img
+                id="lightbox-img"
+                src=""
+                alt="Enlarged Image"
+                class="max-w-full max-h-full rounded shadow-lg"
+              />
+            </div>
+
+            <h2 class="text-xl font-bold mb-4">IT Ticketing v1</h2>
+
+            <p class="mb-4">
+              This is the modal content. You can put anything here. <br /><br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque eleifend, nisi vel porta eleifend, sapien nisi
+              faucibus justo, in commodo orci nisi a ligula. Aenean convallis
+              sapien non ipsum ullamcorper, vel porta nunc fermentum. Nulla
+              facilisi. Sed fringilla, nulla a porttitor blandit, magna nunc
+              bibendum erat, a lacinia ex nisi vitae neque. Sed pretium, lorem
+              at sollicitudin hendrerit, orci erat commodo sem, a tincidunt
+              risus augue ac magna.
+              <!-- Add more lines if you want to test scroll -->
+            </p>
+
+            <button
+              onclick="document.getElementById('myModal').classList.add('hidden')"
+              class="bg-red-500 text-white px-4 py-2 rounded"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- project 1 -->
+          <div
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            class="project-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow"
+            data-animate="slideUp"
+          >
+            <div class="relative h-48 overflow-hidden">
+              <img
+                src="/projects/ittsm/2.png"
+                alt="ticketing system v1"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex items-center mb-2 flex-wrap">
+                <span
+                  class="inline-block px-3 py-1 bg-yellow-300 text-indigo-600 rounded-full text-xs mr-1"
+                >
+                  HTML5
+                </span>
+                <span
+                  class="inline-block px-3 py-1 bg-yellow-300 text-indigo-600 rounded-full text-xs mr-1"
+                >
+                  CSS3
+                </span>
+                <span
+                  class="inline-block px-3 py-1 bg-yellow-300 text-indigo-600 rounded-full text-xs mr-1"
+                >
+                  JS
+                </span>
+
+                <span
+                  class="inline-block px-3 py-1 bg-indigo-100 text-indigo-600 rounded-full text-xs mr-1"
+                >
+                  Bootstrap
+                </span>
+
+                <span
+                  class="inline-block px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-xs mr-1 mt-2"
+                >
+                  Native PHP
+                </span>
+
+                <span
+                  class="inline-block px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-xs mr-1 mt-2"
+                >
+                  MySQL
+                </span>
+                <span
+                  class="inline-block px-3 py-1 bg-emerald-300 text-purple-600 rounded-full text-xs mt-2"
+                >
+                  <i class="fa-solid fa-tag"></i>
+                  In used
+                </span>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800 mb-2">
+                IT Ticketing System v.1
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Comprehensive ticketing system with issue tracking, reporting,
+                and team collaboration tools.
+              </p>
+              <div class="flex justify-between items-center">
+                <button
+                  onclick="document.getElementById('myModal').classList.remove('hidden')"
+                  class="bg-blue-600 text-white px-4 py-2 rounded"
+                >
+                  View Projects
+                </button>
+                <a
+                  href="https://github.com/Naivians"
+                  class="text-gray-500 hover:text-gray-700"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- project 2 -->
+          <div
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            class="project-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow"
+            data-animate="slideUp"
+          >
+            <div class="relative h-48 overflow-hidden">
+              <img
+                src="/projects/ittsm2/2.png"
+                alt="ticketing system v1"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex items-center mb-2 flex-wrap">
+                <span
+                  class="inline-block px-3 py-1 bg-yellow-300 text-indigo-600 rounded-full text-xs mr-1"
+                >
+                  HTML5
+                </span>
+                <span
+                  class="inline-block px-3 py-1 bg-yellow-300 text-indigo-600 rounded-full text-xs mr-1"
+                >
+                  CSS3
+                </span>
+                <span
+                  class="inline-block px-3 py-1 bg-yellow-300 text-indigo-600 rounded-full text-xs mr-1"
+                >
+                  JS
+                </span>
+                <span
+                  class="inline-block px-3 py-1 bg-indigo-100 text-indigo-600 rounded-full text-xs mr-1"
+                >
+                  Bootstrap
+                </span>
+
+                <span
+                  class="inline-block px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-xs mr-1 mt-2"
+                >
+                  Laravel
+                </span>
+
+                <span
+                  class="inline-block px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-xs mr-1 mt-2"
+                >
+                  MySQL
+                </span>
+
+                <span
+                  class="inline-block px-3 py-1 bg-emerald-300 text-purple-600 rounded-full text-xs mt-2"
+                >
+                  <i class="fa-solid fa-tag"></i>
+                  In used
+                </span>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800 mb-2">
+                IT Ticketing System v.2
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Comprehensive ticketing system plus flight simulator error
+                logging dedicated for aviation school, the system can issue
+                tracking, reporting and team collaboration tools. much faster
+                and smoother system
+              </p>
+              <div class="flex justify-between items-center">
+                <a
+                  href="https://github.com/Naivians"
+                  class="text-indigo-600 hover:text-indigo-800 flex items-center"
+                >
+                  View Project <i class="fas fa-external-link-alt ml-2"></i>
+                </a>
+                <a
+                  href="https://github.com/Naivians"
+                  class="text-gray-500 hover:text-gray-700"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- project 3 -->
+          <div
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            class="project-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow"
+            data-animate="slideUp"
+          >
+            <div class="relative h-48 overflow-hidden">
+              <img
+                src="/projects/leiaai/1.png"
+                alt="ticketing system v1"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex items-center mb-2 flex-wrap">
+                <span
+                  class="inline-block px-3 py-1 bg-yellow-300 text-indigo-600 rounded-full text-xs mr-1"
+                >
+                  HTML5
+                </span>
+                <span
+                  class="inline-block px-3 py-1 bg-yellow-300 text-indigo-600 rounded-full text-xs mr-1"
+                >
+                  CSS3
+                </span>
+                <span
+                  class="inline-block px-3 py-1 bg-yellow-300 text-indigo-600 rounded-full text-xs mr-1"
+                >
+                  JS
+                </span>
+                <span
+                  class="inline-block px-3 py-1 bg-indigo-100 text-indigo-600 rounded-full text-xs mr-1"
+                >
+                  Bootstrap
+                </span>
+
+                <span
+                  class="inline-block px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-xs mr-1 mt-2"
+                >
+                  Laravel
+                </span>
+
+                <span
+                  class="inline-block px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-xs mr-1 mt-2"
+                >
+                  MySQL
+                </span>
+
+                <span
+                  class="inline-block px-3 py-1 bg-emerald-300 text-purple-600 rounded-full text-xs mt-2"
+                >
+                  <i class="fa-solid fa-tag"></i>
+                  On Process
+                </span>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800 mb-2">
+                Leading Edge International Aviation Academy Inc. (LEIAAI)
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Designed and built a clean, professional corporate website for
+                LEIAAI, seamlessly integrated with an AI chatbot that provides
+                instant, accurate responses to company-related inquiries.
+              </p>
+
+              <div class="flex justify-between items-center">
+                <a
+                  href="https://github.com/Naivians"
+                  class="text-indigo-600 hover:text-indigo-800 flex items-center"
+                >
+                  View Project <i class="fas fa-external-link-alt ml-2"></i>
+                </a>
+                <a
+                  href="https://github.com/Naivians"
+                  class="text-gray-500 hover:text-gray-700"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- project 4 -->
+          <div
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            class="project-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow"
+            data-animate="slideUp"
+          >
+            <div class="relative h-48 overflow-hidden">
+              <img
+                src="/projects/MyPOS/7.png"
+                alt="ticketing system v1"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex items-center mb-2 flex-wrap">
+                <span
+                  class="inline-block px-3 py-1 bg-yellow-300 text-indigo-600 rounded-full text-xs mr-1"
+                >
+                  HTML5
+                </span>
+                <span
+                  class="inline-block px-3 py-1 bg-yellow-300 text-indigo-600 rounded-full text-xs mr-1"
+                >
+                  CSS3
+                </span>
+                <span
+                  class="inline-block px-3 py-1 bg-yellow-300 text-indigo-600 rounded-full text-xs mr-1"
+                >
+                  JS
+                </span>
+                <span
+                  class="inline-block px-3 py-1 bg-indigo-100 text-indigo-600 rounded-full text-xs mr-1"
+                >
+                  Bootstrap
+                </span>
+
+                <span
+                  class="inline-block px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-xs mr-1 mt-2"
+                >
+                  Native PHP
+                </span>
+
+                <span
+                  class="inline-block px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-xs mr-1 mt-2"
+                >
+                  MySQL
+                </span>
+
+                <span
+                  class="inline-block px-3 py-1 bg-emerald-300 text-purple-600 rounded-full text-xs mt-2"
+                >
+                  <i class="fa-solid fa-tag"></i>
+                  in Github
+                </span>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800 mb-2">
+                MC Printing Shop
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Developed a Point of Sale (POS) system for our family printing
+                shop during college, featuring a comprehensive dashboard that
+                tracks daily to monthly transactions with interactive and
+                visually appealing graphs. The system continues to be used
+                locally, supporting ongoing business operations.
+              </p>
+
+              <div class="flex justify-between items-center">
+                <a
+                  href="https://github.com/Naivians"
+                  class="text-indigo-600 hover:text-indigo-800 flex items-center"
+                >
+                  View Project <i class="fas fa-external-link-alt ml-2"></i>
+                </a>
+                <a
+                  href="https://github.com/Naivians"
+                  class="text-gray-500 hover:text-gray-700"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- project 5 -->
+          <div
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            class="project-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow"
+            data-animate="slideUp"
+          >
+            <div class="relative h-48 overflow-hidden">
+              <img
+                src="/projects/vision/1.png"
+                alt="ticketing system v1"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex items-center mb-2 flex-wrap">
+                <span
+                  class="inline-block px-3 py-1 bg-yellow-300 text-indigo-600 rounded-full text-xs mr-1"
+                >
+                  HTML5
+                </span>
+                <span
+                  class="inline-block px-3 py-1 bg-yellow-300 text-indigo-600 rounded-full text-xs mr-1"
+                >
+                  CSS3
+                </span>
+                <span
+                  class="inline-block px-3 py-1 bg-yellow-300 text-indigo-600 rounded-full text-xs mr-1"
+                >
+                  JS
+                </span>
+                <span
+                  class="inline-block px-3 py-1 bg-indigo-100 text-indigo-600 rounded-full text-xs mr-1"
+                >
+                  Bootstrap
+                </span>
+
+                <span
+                  class="inline-block px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-xs mr-1 mt-2"
+                >
+                  Laravel
+                </span>
+
+                <span
+                  class="inline-block px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-xs mr-1 mt-2"
+                >
+                  MySQL
+                </span>
+
+                <span
+                  class="inline-block px-3 py-1 bg-emerald-300 text-purple-600 rounded-full text-xs mt-2"
+                >
+                  <i class="fa-solid fa-tag"></i>
+                  in Github
+                </span>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800 mb-2">
+                Vision International Construction OPC (Vision)
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Built a modern corporate website for Vision with a clean,
+                professional design and integrated Laravel-powered API email
+                functionality for reliable communication.
+              </p>
+
+              <div class="flex justify-between items-center">
+                <a
+                  href="#"
+                  class="text-indigo-600 hover:text-indigo-800 flex items-center"
+                >
+                  View Project <i class="fas fa-external-link-alt ml-2"></i>
+                </a>
+                <a
+                  href="https://github.com/Naivians"
+                  class="text-gray-500 hover:text-gray-700"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- project 6 -->
+          <div
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            class="project-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow"
+            data-animate="slideUp"
+          >
+            <div class="relative h-48 overflow-hidden">
+              <img
+                src="/projects/zignet/1.png"
+                alt="ticketing system v1"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex items-center mb-2 flex-wrap">
+                <span
+                  class="inline-block px-3 py-1 bg-yellow-300 text-indigo-600 rounded-full text-xs mr-1"
+                >
+                  HTML5
+                </span>
+                <span
+                  class="inline-block px-3 py-1 bg-yellow-300 text-indigo-600 rounded-full text-xs mr-1"
+                >
+                  CSS3
+                </span>
+                <span
+                  class="inline-block px-3 py-1 bg-yellow-300 text-indigo-600 rounded-full text-xs mr-1"
+                >
+                  JS
+                </span>
+                <span
+                  class="inline-block px-3 py-1 bg-indigo-100 text-indigo-600 rounded-full text-xs mr-1"
+                >
+                  Bootstrap
+                </span>
+
+                <span
+                  class="inline-block px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-xs mr-1"
+                >
+                  Native PHP
+                </span>
+
+                <span
+                  class="inline-block px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-xs mr-1 mt-2"
+                >
+                  MySQL
+                </span>
+                <span
+                  class="inline-block px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-xs mr-1 mt-2"
+                >
+                  Semaphore
+                </span>
+
+                <span
+                  class="inline-block px-3 py-1 bg-emerald-300 text-purple-600 rounded-full text-xs mt-2"
+                >
+                  <i class="fa-solid fa-tag"></i>
+                  in Github
+                </span>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800 mb-2">
+                Zignet Autoworks
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Developed a corporate website for Zignet Autoworks as part of
+                our capstone project, featuring an appointment scheduling system
+                with SMS notifications to remind clients of their bookings.
+                While the design was kept simple, the project emphasized
+                functionality, enhancing customer convenience and streamlining
+                business operations.
+              </p>
+
+              <div class="flex justify-between items-center">
+                <a
+                  href="https://github.com/Naivians"
+                  class="text-indigo-600 hover:text-indigo-800 flex items-center"
+                >
+                  View Project <i class="fas fa-external-link-alt ml-2"></i>
+                </a>
+                <a
+                  href="https://github.com/Naivians"
+                  class="text-gray-500 hover:text-gray-700"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-16" data-animate="fadeIn">
+          <a
+            href="https://github.com/Naivians"
+            class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700"
+          >
+            View all projects in github <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-indigo-600">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-white mb-4">Get In Touch</h2>
+          <div
+            class="w-20 h-1 bg-white mx-auto"
+            data-animate="slideInLeft"
+          ></div>
+        </div>
+
+        <div class="">
+          <div
+            class="flex flex-col items-center justify-center space-y-8"
+            data-animate="fadeIn"
+          >
+            <h3 class="text-2xl font-bold text-white">Let's work together!</h3>
+            <p class="text-indigo-100 text-center">
+              Whether you have a project in mind or just want to say hi, feel
+              free to reach out. <br />
+              I'm currently available for freelance work and open to exciting
+              opportunities.
+            </p>
+
+            <!-- Contact Info -->
+            <div class="space-y-4">
+              <div class="flex items-center">
+                <span class="bg-white/20 p-3 rounded-lg text-white mr-4">
+                  <i class="fas fa-envelope"></i>
+                </span>
+                <div>
+                  <p class="text-indigo-100 text-sm">Email</p>
+                  <p class="text-white font-medium">
+                    madera.marvin98@gmail.com
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <span class="bg-white/20 p-3 rounded-lg text-white mr-4">
+                  <i class="fas fa-phone"></i>
+                </span>
+                <div>
+                  <p class="text-indigo-100 text-sm">Phone</p>
+                  <p class="text-white font-medium">+639510157609</p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <span class="bg-white/20 p-3 rounded-lg text-white mr-4">
+                  <i class="fas fa-map-marker-alt"></i>
+                </span>
+                <div>
+                  <p class="text-indigo-100 text-sm">Location</p>
+                  <p class="text-white font-medium">Taytay, Rizal</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Socials -->
+            <div class="pt-4 flex space-x-6">
+              <a
+                href="https://github.com/Naivians"
+                class="text-gray-400 hover:text-white"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+
+              <a
+                href="https://www.facebook.com/maderamarvinc"
+                class="text-gray-400 hover:text-white"
+              >
+                <i class="fab fa-facebook text-md"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <a
+            href="#"
+            class="text-xl font-bold text-white flex items-center justify-center"
+          >
+            <span class="bg-indigo-600 text-white p-1 rounded mr-2">
+              <i class="fas fa-code"></i>
+            </span>
+            M&M
+          </a>
+          <div class="flex justify-center mt-6 space-x-6">
+            <a
+              href="https://github.com/Naivians"
+              class="text-gray-400 hover:text-white"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+
+            <a
+              href="https://www.facebook.com/maderamarvinc"
+              class="text-gray-400 hover:text-white"
+            >
+              <i class="fab fa-facebook text-md"></i>
+            </a>
+          </div>
+          <div class="mt-8">
+            <p>© <span id="year"></span> Marvin Madera. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- AOS Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>

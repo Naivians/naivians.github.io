@@ -1,3 +1,15 @@
+function openLightbox(src) {
+  const lightbox = document.getElementById("lightbox");
+  const img = document.getElementById("lightbox-img");
+  img.src = src.replace(/300x200/, "1200x800"); // load bigger version (if you have)
+  lightbox.classList.remove("hidden");
+}
+
+function closeLightbox() {
+  const lightbox = document.getElementById("lightbox");
+  lightbox.classList.add("hidden");
+}
+
 // Mobile menu toggle
 document.getElementById("menu-toggle").addEventListener("click", function () {
   const menu = document.getElementById("mobile-menu");
@@ -25,7 +37,6 @@ animateOnScroll();
 
 // Run on scroll
 window.addEventListener("scroll", animateOnScroll);
-
 
 // Update copyright year
 document.getElementById("year").textContent = new Date().getFullYear();
