@@ -1,13 +1,38 @@
-function openLightbox(src) {
-  const lightbox = document.getElementById("lightbox");
-  const img = document.getElementById("lightbox-img");
-  img.src = src.replace(/300x200/, "1200x800"); // load bigger version (if you have)
-  lightbox.classList.remove("hidden");
+// $(document).ready(function () {
+  
+// });
+
+function openModal(project_id, folderName) {
+  fetch(`modals/projects_modal.php?folder=${encodeURIComponent(folderName)}&project_id=${encodeURIComponent(project_id)}`)
+    .then((response) => {
+      if (!response.ok) throw new Error("Failed to load modal");
+      return response.text();
+    })
+    .then((html) => {
+      // Inject modal HTML
+      document.getElementById("modal-container").innerHTML = html;
+
+      // Now select by ID after injection
+      const modal = document.getElementById(project_id);
+      if (modal) modal.classList.remove("hidden");
+
+      // Init slick after modal is in DOM
+      $(".slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+    })
+    .catch((error) => console.error(error));
 }
 
-function closeLightbox() {
-  const lightbox = document.getElementById("lightbox");
-  lightbox.classList.add("hidden");
+function closeModal(id) {
+  const modal = document.getElementById(id);
+  if (modal) modal.remove(); // remove modal from DOM
 }
 
 // Mobile menu toggle
