@@ -22,15 +22,6 @@ sort($images);
     class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
     <div
         class="bg-white p-6 rounded-lg shadow-lg w-full max-w-5xl h-[80vh] overflow-y-auto overflow-x-hidden relative">
-
-
-        <?php
-        if (isset($projectsData[$project_id]['video'])) {
-        ?>
-            <video src="<?= $projectsData[$project_id]['video'] ?>" muted autoplay controls class="w-full h-100 mb-6"></video>
-        <?php
-        }
-        ?>
         <div class="slider w-full mt-5">
             <?php foreach ($images as $image):
                 $image = str_replace('\\', '/', $image);

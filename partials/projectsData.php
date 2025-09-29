@@ -19,19 +19,16 @@ $projectsData = [
         "title" => "IT Ticketing System v1",
         "description" => "Comprehensive ticketing system with issue tracking, reporting, and team collaboration tools.",
         "img" => "./projects/ittsm/2.png",
-        "video"=> null,
     ],
     "proj2" => [
         "title" => "IT Ticketing System v2",
         "description" => "Comprehensive ticketing system plus flight simulator error logging dedicated for aviation school, the system can issue tracking, reporting and team collaboration tools. much faster and smoother system.",
         "img" => "./projects/ittsm2/2.png",
-        "video"=> null,
     ],
     "proj3" => [
         "title" => "Leading Edge International Aviation Academy Inc. (LEIAAI)",
         "description" => "Designed and built a clean, professional corporate website for LEIAAI, seamlessly integrated with an AI chatbot that provides instant, accurate responses to company-related inquiries.",
         "img" => "./projects/leiaai/1.png",
-        "video"=> "./projects/leiaai/vid.mp4",
     ],
     "proj4" => [
         "title" => "MC Printing Shop",
@@ -42,7 +39,6 @@ $projectsData = [
         "title" => "Vision International Construction OPC (Vision)",
         "description" => "Built a modern corporate website for Vision with a clean, professional design and integrated Laravel-powered API email functionality for reliable communication.",
         "img" => "./projects/vision/1.png",
-        "video"=> "./projects/vision/vid.mp4",
     ],
     "proj6" => [
         "title" => "Zignet Autoworks",
