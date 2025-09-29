@@ -1,9 +1,13 @@
 // $(document).ready(function () {
-  
+
 // });
 
 function openModal(project_id, folderName) {
-  fetch(`modals/projects_modal.php?folder=${encodeURIComponent(folderName)}&project_id=${encodeURIComponent(project_id)}`)
+  fetch(
+    `modals/projects_modal.php?folder=${encodeURIComponent(
+      folderName
+    )}&project_id=${encodeURIComponent(project_id)}`
+  )
     .then((response) => {
       if (!response.ok) throw new Error("Failed to load modal");
       return response.text();
@@ -81,4 +85,8 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       });
     }
   });
+});
+
+$("#viewMore").on("click", () => {
+  $("#moreProjects").toggleClass("hidden");
 });

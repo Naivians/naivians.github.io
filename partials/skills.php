@@ -24,11 +24,6 @@
                   <div class="space-y-4">
                       <div
                           class="skill-item p-3 bg-gray-50 rounded-lg flex items-center">
-                          <!-- <img
-                  src="https://placehold.co/30x30"
-                  alt="HTML5 logo"
-                  class="w-8 h-8 rounded mr-3"
-                /> -->
                           <div
                               class="w-8 h-8 rounded mr-3 flex items-center justify-center">
                               <i class="fa-brands fa-html5 text-xl"></i>
@@ -68,6 +63,17 @@
                           <span>Bootstrap</span>
                           <span
                               class="ml-auto bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-xs">95%</span>
+                      </div>
+                      <div
+                          class="skill-item p-3 bg-gray-50 rounded-lg flex items-center">
+                          <div
+                              class="w-8 h-8 rounded mr-3 flex items-center justify-center">
+                              <i class="fa-brands fa-bootstrap"></i>
+                          </div>
+
+                          <span>Tailwind</span>
+                          <span
+                              class="ml-auto bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-xs">50%</span>
                       </div>
                   </div>
               </div>

@@ -19,13 +19,13 @@ $projectsData = [
         "title" => "IT Ticketing System v1",
         "description" => "Comprehensive ticketing system with issue tracking, reporting, and team collaboration tools.",
         "img" => "./projects/ittsm/2.png",
-        "video"=> "",
+        "video"=> null,
     ],
     "proj2" => [
         "title" => "IT Ticketing System v2",
         "description" => "Comprehensive ticketing system plus flight simulator error logging dedicated for aviation school, the system can issue tracking, reporting and team collaboration tools. much faster and smoother system.",
         "img" => "./projects/ittsm2/2.png",
-        "video"=> "",
+        "video"=> null,
     ],
     "proj3" => [
         "title" => "Leading Edge International Aviation Academy Inc. (LEIAAI)",
@@ -48,5 +48,10 @@ $projectsData = [
         "title" => "Zignet Autoworks",
         "description" => "Developed a corporate website for Zignet Autoworks as part of our capstone project, featuring an appointment scheduling system with SMS notifications to remind clients of their bookings. While the design was kept simple, the project emphasized functionality, enhancing customer convenience and streamlining business operations.",
         "img" => "./projects/zignet/1.png",
+    ],
+    "proj7" => [
+        "title" => "Expense Tracker",
+        "description" => "A free, web-based Expense Tracker application that anyone can use to manage personal and business finances with ease. Users can log income and expenses, categorize transactions, generate visual reports, and monitor spending habits. Designed with a focus on usability and accuracy, the platform provides valuable insights to support smarter financial decisions.",
+        "img" => "./projects/expense-tracker/1.png",
     ],
 ];

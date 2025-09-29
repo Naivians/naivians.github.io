@@ -27,7 +27,7 @@ sort($images);
         <?php
         if (isset($projectsData[$project_id]['video'])) {
         ?>
-            <video src="<?= $projectsData[$project_id]['video'] ?>"muted autoplay controls></video>
+            <video src="<?= $projectsData[$project_id]['video'] ?>" muted autoplay controls class="w-full h-100 mb-6"></video>
         <?php
         }
         ?>
@@ -37,7 +37,9 @@ sort($images);
                 $docRoot = str_replace('\\', '/', $_SERVER['DOCUMENT_ROOT']);
                 $imageURL = str_replace($docRoot, '', $image);
             ?>
-                <div><img src="<?= $imageURL ?>" class="w-full" alt="<?= htmlspecialchars(basename($image)) ?>"></div>
+                <div><img src="<?= $imageURL ?>"
+                        class="max-w-lg max-h-80 object-fit mx-auto"
+                        alt="<?= htmlspecialchars(basename($image)) ?>"></div>
             <?php endforeach; ?>
         </div>
 
@@ -49,9 +51,6 @@ sort($images);
             <?= htmlspecialchars($projectsData[$project_id]['description']) ?>
         </p>
     </div>
-
-
-
 
     <button onclick="closeModal('<?= $project_id ?>')"
         class="bg-red-500 text-white px-4 py-2 rounded absolute top-5 right-5">

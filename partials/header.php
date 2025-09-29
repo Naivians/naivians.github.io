@@ -21,7 +21,7 @@
                          View Projects
                      </a>
                      <a
-                         href="A.pdf"
+                         href="My_Resume.pdf"
                          download="My_Resume.pdf"
                          class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors">
                          Hire Me!
